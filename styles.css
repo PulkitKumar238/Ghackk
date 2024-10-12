@@ -73,7 +73,7 @@ body {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
   transition: width 0.3s ease;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 #search-button {
-  background-color: var(--accent-color);
+  background-color: purple;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -152,6 +152,7 @@ body {
   background-color: var(--secondary-color);
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 
 /* Featured Section */
