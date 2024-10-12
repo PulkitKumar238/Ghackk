@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeRealm - Discover Supernatural Anime</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">AnimeRealm</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <div class="search-container">
+          <input type="text" placeholder="Search anime..." id="search-input">
+          <button id="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Discover Supernatural Anime</h1>
+        <p>Immerse yourself in captivating stories of magic, mystery, and the unknown.</p>
+        <a href="#featured" class="cta-button">Explore Now</a>
+      </div>
+    </section>
+
+    <section id="featured" class="featured">
+      <div class="container">
+        <h2>Featured Anime</h2>
+        <div id="featured-carousel"></div>
+      </div>
+    </section>
+
+    <section id="characters" class="characters">
+      <div class="container">
+        <h1>Main Characters</h1>
+        <div class="character-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Supernatural Anime</h2>
+        <p>Supernatural anime combines the best of Japanese animation with thrilling paranormal elements. Dive into
+          worlds where the impossible becomes possible, and ordinary people discover extraordinary abilities.</p>
+        <p>Our curated collection showcases the most captivating supernatural anime series, featuring unique storylines,
+          breathtaking artwork, and unforgettable characters.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2024 AnimeRealm. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+ <script type="text/babel" src="AnimeCarousel.js"></script>
+<script type="text/babel">
+  ReactDOM.render(
+    <AnimeCarousel />,
+    document.getElementById('featured-carousel')
+  );
+</script>
+</body>
+
+</html>
